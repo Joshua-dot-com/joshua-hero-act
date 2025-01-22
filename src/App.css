@@ -1,0 +1,77 @@
+.wrapper {
+  margin-inline: 1rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2rem;
+  height: 100svh;
+}
+
+.waving-hand {
+  width: 94px;
+}
+
+.hero-img-wrapper {
+  background-image: url('/splat-ink.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  height: 100%;
+  max-width: 360px;
+  margin-inline: auto;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 2rem;
+  border: 1px solid black;
+}
+
+.intro {
+  font-size: 3rem;
+}
+
+.desc {
+  margin-block: 1rem;
+}
+
+.dl-cv {
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: orange;
+}
+
+.dl-cv:hover {
+  background-color: rgb(218, 141, 0);
+}
+
+.dl-cv:active {
+  background-color: rgb(207, 135, 0);
+}
+
+.highlight-bold {
+  color: orange;
+  font-weight: 600;
+}
+
+@media only screen and (width < 720px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
