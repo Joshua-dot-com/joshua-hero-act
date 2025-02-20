@@ -1,0 +1,92 @@
+/* Full-screen flex container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #2a5298);
+  padding: 2rem;
+}
+
+/* Stylish card layout */
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to the card */
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Image styling */
+.about-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f4a261;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add a hover effect to the image */
+.about-img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Content styling */
+.about-content {
+  color: white;
+  text-align: left;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h2, h3, h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+}
+
+/* Highlight effect for tech stack */
+.highlight {
+  color: #f4a261;
+  font-weight: 700;
+}
+
+/* Modern paragraph styling */
+p {
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 400px;
+}
+
+/* Small but cool waving emoji */
+.wave-icon {
+  font-size: 2rem;
+  display: inline-block;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+/* Wave Animation */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-10deg); }
+}

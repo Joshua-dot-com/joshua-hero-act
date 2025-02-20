@@ -1,0 +1,27 @@
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+}
+
+.nav--bg {
+  background-color: linear-gradient(135deg, #ffffff, #2a5298);
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(240, 157, 24);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
