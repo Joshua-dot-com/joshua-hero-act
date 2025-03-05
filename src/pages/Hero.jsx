@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='wrapper'>
       <div className='hero-img-wrapper'>
-        <img className='hero-img' src="/josh.png" alt="Joshua Saavedra portrait" />
+        <img className='hero-img' src="/2.png" alt="Joshua Saavedra portrait" />
       </div>
       <div className='info-wrapper'>
         <div>
