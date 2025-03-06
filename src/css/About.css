@@ -1,4 +1,4 @@
-/* Full-screen flex container */
+/* 🌍 Full-screen flex container */
 .about-container {
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
   padding: 2rem;
 }
 
-/* Stylish card layout */
+/* 🎨 Stylish card layout */
 .about-card {
   display: flex;
   align-items: center;
@@ -22,34 +22,36 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Add hover effect to the card */
+/* 🔥 Hover effect on the card */
 .about-card:hover {
   transform: scale(1.05);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Image styling */
+/* 🖼️ Image Styling */
 .about-img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #f4a261;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Add a hover effect to the image */
+/* 🌀 Cool hover effect */
 .about-img:hover {
   transform: rotate(5deg) scale(1.1);
+  box-shadow: 0px 5px 15px rgba(244, 162, 97, 0.7);
 }
 
-/* Content styling */
+/* ✨ Content Styling */
 .about-content {
   color: white;
   text-align: left;
+  max-width: 500px;
 }
 
-/* Headings */
+/* 🏆 Headings */
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -63,30 +65,91 @@ h2, h3, h4 {
   opacity: 0.9;
 }
 
-/* Highlight effect for tech stack */
+/* 🔶 Highlight effect for tech stack */
 .highlight {
   color: #f4a261;
   font-weight: 700;
 }
 
-/* Modern paragraph styling */
+/* 📝 Modern paragraph styling */
 p {
   font-size: 1rem;
   opacity: 0.8;
   max-width: 400px;
 }
 
-/* Small but cool waving emoji */
+/* 🌊 Cool waving emoji */
 .wave-icon {
   font-size: 2rem;
   display: inline-block;
   animation: wave 1.5s infinite ease-in-out;
 }
 
-/* Wave Animation */
+/* 🎭 Wave Animation */
 @keyframes wave {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(10deg); }
   50% { transform: rotate(0deg); }
   75% { transform: rotate(-10deg); }
+}
+
+/* 🌍 Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .about-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .about-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
 }
